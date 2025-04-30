@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3.23.2
+        uses: github/codeql-action/init@v3.28.16
         with:
           languages: javascript, typescript
 
@@ -47,7 +47,7 @@ jobs:
         run: pnpm build
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3.23.2
+        uses: github/codeql-action/analyze@v3.28.16
         with:
           category: '/language:javascript'
 
